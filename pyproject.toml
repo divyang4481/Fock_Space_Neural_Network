@@ -10,7 +10,15 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = {file = "LICENSE"}
 authors = [{name = "FSNN Team"}]
-dependencies = []
+dependencies = [
+    "torch",
+    "torchvision",
+    "fvcore",
+    "pyyaml",
+    "tensorboard",
+    "scikit-learn",
+    "pandas",
+]
 
 [project.optional-dependencies]
 dev = ["pytest", "pre-commit"]
