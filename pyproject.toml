@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fsnn"
+version = "0.1.0"
+description = "Fock Space Neural Network"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "FSNN Team"}]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest", "pre-commit"]
