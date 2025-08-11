@@ -1,0 +1,14 @@
+dataset: adult
+batch_size: 128
+epochs: 3
+lr: 0.001
+output: runs/adult
+model:
+  hidden_features: 256
+  complexity_lambda: 0.0001
+  growth:
+    step: 32
+    patience: 2
+    delta: 0.001
+  prune:
+    pct: 0.2

@@ -22,11 +22,17 @@ Download datasets:
 python scripts/download_data.py
 ```
 
-Run training experiments:
+Run training experiments (YAML configs in `configs/`):
 
 ```bash
-make train-tabular
-make train-vision
+make train-tabular  # UCI Adult
+make train-vision   # MNIST
+```
+
+Evaluate a trained model:
+
+```bash
+python scripts/eval.py --config configs/vision/mnist.yaml --checkpoint runs/mnist/model.pt
 ```
 
 Run tests:

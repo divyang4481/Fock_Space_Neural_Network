@@ -15,7 +15,7 @@ format:
 black .
 
 train-tabular:
-$(PYTHON) scripts/train.py --config configs/tabular/fsnn.yaml
+$(PYTHON) scripts/train.py --config configs/tabular/adult.yaml
 
 train-vision:
-$(PYTHON) scripts/train.py --config configs/vision/fsnn.yaml
+$(PYTHON) scripts/train.py --config configs/vision/mnist.yaml

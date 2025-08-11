@@ -1,0 +1,14 @@
+dataset: mnist
+batch_size: 64
+epochs: 3
+lr: 0.001
+output: runs/mnist
+model:
+  hidden_features: 128
+  complexity_lambda: 0.0001
+  growth:
+    step: 16
+    patience: 2
+    delta: 0.001
+  prune:
+    pct: 0.1
